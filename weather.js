@@ -46,4 +46,7 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-
+console.log(data.weather[0].main);
+console.log(data.sys.country);
+console.log(data.main.temp_max);
+console.log(data.main.temp_min);
