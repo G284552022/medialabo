@@ -25,22 +25,21 @@ let hantei ={kotoba: ["答えは "+kotae+" でした．すでにゲームは終�
                       "まちがい．答えはもっと小さいですよ"] 
 }
 
-    kaisu = Math.floor(Math.random()*10) + 1;
-console.log(kaisu +"回目の予想は:4")
+kaisu = Math.floor(Math.random()*10) + 1;
+console.log(kaisu +"回目の予想は:"+yoso)
 
-if(kaisu > 4){
+if(kaisu >= 4){
     console.log(hantei.kotoba[0])
-}else if(kaisu === 3){
-    console.log(hantei.kotoba[2])
-}else if (kotae < yoso){
-    console.log(hantei.kotoba[4])
-}else if(kotae > yoso){
-    console.log(hantei.kotoba[3])
-}
-if (kotae === yoso){
-    console.log(hantei.kotoba[1])
-}
 
+}else if (kotae === yoso){
+    console.log(hantei.kotoba[1])
+}else if (kaisu === 3){
+        console.log(hantei.kotoba[2])
+}else if (kotae < yoso){
+        console.log(hantei.kotoba[4])
+}else if(kotae > yoso){
+        console.log(hantei.kotoba[3])
+}
 
 
 
