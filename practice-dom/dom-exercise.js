@@ -54,7 +54,12 @@ w.remove();
 }					
 
 // 練習4-5 箇条書き追加プログラム
+let G = document.querySelector('ul#location');
 
 for (let n of data) {
-    console.log(n.name+" ... 緯度:"+n.lat+", 経度:"+n.lng);
+	let F = document.createElement('li');
+    F.textContent =(n.name+" ... 緯度:"+n.lat+", 経度:"+n.lng);	
+    //console.log(n.name+" ... 緯度:"+n.lat+", 経度:"+n.lng);
+	//G.insertAdjacentElement('afterend', F);
+	G.insertAdjacentElement('beforeend', F);
 }
