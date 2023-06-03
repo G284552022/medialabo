@@ -4,12 +4,27 @@
     <meta charset="utf-8">
     <title>世界の天気</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="project.js" defer></script>
   </head>
   <body>
+    <button id="sendRequest">通信</button>
+
+    <label for="kuni">プルダウンメニュー</label>
+    <select name="kuni" id="kuni">
+        <option value="">国を一つを選んでください</option>
+
+        <option value="360630">カイロ</option>
+        <option value="B">モスクワ</option>
+        <option value="C">ヨハネスブルク</option>
+    </select>
+    <button id="btn">コンソールに表示</button>
+
 
 <table>
     <colgroup span="4"></colgroup>
+
+
     <tr>
       <th>国</th>
       <th>首都</th>
@@ -20,13 +35,14 @@
       <td>アメリカ合衆国</td>
       <td>ニューヨーク</td>
       <td>晴れ</td>
-      <td>30</td>
+      <td id="data"></td>
+      
     </tr>
     <tr>
       <td>イギリス</td>
       <td>ロンドン</td>
       <td>曇り</td>
-      <td>20</td>
+      <td id="temp"></td>
     </tr>
   </table>
   </body>
