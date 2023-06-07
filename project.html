@@ -8,18 +8,37 @@
     <script src="project.js" defer></script>
   </head>
   <body>
+    <h1>世界の天気</h1>
     <button id="sendRequest">通信</button>
 
     <label for="kuni">プルダウンメニュー</label>
     <select name="kuni" id="kuni">
         <option value="">国を一つを選んでください</option>
 
-        <option value="360630">カイロ</option>
-        <option value="B">モスクワ</option>
-        <option value="C">ヨハネスブルク</option>
+        <option >カイロ</option>
+        <option >モスクワ</option>
+        <option >ヨハネスブルグ</option>
+        <option >北京市</option>
+        <option >東京都</option>
+        <option >シンガポール</option>
+        <option >シドニー</option>
+        <option >ロンドン</option>
+        <option >Paris</option>
+        <option >State of Rio de Janeiro</option>
+        <option >ニューヨーク</option>
+        <option >ロサンゼルス</option>
     </select>
-    <button id="btn">コンソールに表示</button>
+    <button id="btn">検索</button>
 
+    <p><span id="answer"></span></p>
+    <p><span id="B"></span></p>
+    <p><span id="C"></span></p>
+    <p><span id="D"></span></p>
+    <p><span id="E"></span></p>
+    <p><span id="F"></span></p>
+    <p><span id="G"></span></p>
+    <p><span id="H"></span></p>
+    <p><span id="I"></span></p>
 
 <table>
     <colgroup span="4"></colgroup>
@@ -35,7 +54,7 @@
       <td>アメリカ合衆国</td>
       <td>ニューヨーク</td>
       <td>晴れ</td>
-      <td id="data"></td>
+      <td id="C"></td>
       
     </tr>
     <tr>
