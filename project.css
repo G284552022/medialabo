@@ -1,4 +1,16 @@
 h1 {
-	text-shadow: rgb(32, 107, 255) 1px 0 10px;
+	text-shadow: rgb(46, 27, 249) 1px 0 10px;
     color: rgb(255, 255, 255);
+}
+p span {
+    color: rgb(255, 235, 17);
+    font-weight: bold;
+	background-color: #524ff1;
+}
+button {
+    color: rgb(255, 68, 74);
+    font-weight: bold;
+}
+body {
+    background-color: rgba(0, 255, 255, 0.47);
 }
